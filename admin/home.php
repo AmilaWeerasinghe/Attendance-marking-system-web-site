@@ -62,5 +62,8 @@ if (isset($_GET['logout'])) {
 			</div>
 		</div>
 	</div>
+	<div>
+	<a href="../alist.php">Enter Admin details</a>
+	</div>
 </body>
 </html>
