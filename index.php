@@ -45,5 +45,12 @@
 			</div>
 		</div>
 	</div>
+
+	<div>
+	<a href="disppurchase.php">Attendance</a>
+	</div>
+	<div>
+	<a href="search.php">Search your Attendance</a>
+	</div>
 </body>
 </html>
