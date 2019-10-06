@@ -50,7 +50,7 @@
 	<a href="disppurchase.php">Attendance</a>
 	</div>
 	<div>
-	<a href="search.php">Search your Attendance</a>
+	<a href="searching.php">Search your Attendance</a>
 	</div>
 </body>
 </html>
