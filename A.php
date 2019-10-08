@@ -63,15 +63,40 @@ border: 1px solid #fff;
     //printf($_POST['search'], PHP_EOL);
     //print("   $count");
     ?>
-     
-    <br> Attendance Percentage upto now
-    <?php
+
+<br> Attendance Percentage upto now
+<?php
+$total_num=0;
+$con=mysqli_connect("localhost","root","","hospital");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+$sql="SELECT pname,paddr FROM patient where pname='A'";
+
+if ($result=mysqli_query($con,$sql))
+  {
+  // Fetch one and one row
+  while ($row=mysqli_fetch_row($result))
+    {
+    //printf ("%s (%s)\n",$row[0],$row[1]);
+    $total_num=$row[1];
+
+    }
+  // Free result set
+  mysqli_free_result($result);
+}
+
+
+echo($row[1]);
 $obtained_num=$count;
-$total_num=10;
+
 $per = ($obtained_num/$total_num)*100;
 
 echo $per;
-
+mysqli_close($con);
 ?>
 
 <form>
