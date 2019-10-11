@@ -3,7 +3,7 @@ require('connection.php');
 error_reporting(1);
 ?><html>
  <head>
-  <title>Patients Lists</title>
+  <title>Course Lists</title>
  <link rel="stylesheet" href="css/bootstrap.css"/>
  </head> 
  <body>
@@ -14,12 +14,12 @@ error_reporting(1);
 href=plist.php>Class details</td><td align=center><a
 href=alist.php>Appointments</td>
 </table></td></tr>
-<tr bgcolor=red><td ><font size=4 color=white>Patient
+<tr bgcolor=red><td ><font size=4 color=white>Course
 List</font></td></tr>
-<tr><td><a href=padd.php>Add New Record</a></td></tr>
+<tr><td><a href=padd.php>Add New Course</a></td></tr>
 <tr><td><table width=750 cellspacing=0 cellpadding=5>
-<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Patient
-Name</td><td align=center>Address</td><td align=center>sex</td><td
+<tr bgcolor=#ccccc><td align=center> No</td><td align=center>Course
+Name</td><td align=center>Allocated days</td><td align=center>Teacher</td><td
 align=center>Options</td></tr>
 <?php
 
