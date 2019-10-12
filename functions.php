@@ -58,6 +58,15 @@ function register(){
 					  VALUES('$username','$name','$fingerprintid', '$email', '$user_type', '$password','Y')";
 			mysqli_query($db, $query);
 			$_SESSION['success']  = "New user successfully created!!";
+
+
+
+
+
+
+
+
+			
 			header('location: home.php');
 		}else{
 			$query = "INSERT INTO users (username,name, email, user_type, password,dshow) 
