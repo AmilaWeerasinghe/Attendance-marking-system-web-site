@@ -13,21 +13,24 @@ href=plist.php>Patients</td><td align=center><a
 href=alist.php>Appointments</td>
 </table></td></tr>
 <?php
-require('connection.php');
+require('connection1.php');
 error_reporting(1);
 $rno=trim($_GET["rno"]);
-$rs1=mysql_query("SELECT * from doct where dno='".$rno."'");
+$rs1=mysql_query("SELECT * from users where id='".$rno."'");
 $sno=1;
 while( $row=mysql_fetch_array($rs1)) {
  echo "<tr bgcolor=red><td ><font size=4 color=white>Edit Doctor
 Details</font></td></tr>";
  echo "<form name=fdmod method=post action=dupdate.php>";
  echo "<tr><td><table width=750 cellspacing=0 cellpadding=5>";
- echo "<tr><td>Doctor Name</td><td><input type=text name=name
+ echo "<tr><td>UserName</td><td><input type=text name=username
 size=30 maxlength=30 value='".$row[1]."'></td></tr>";
- echo "<tr><td>Specilization</td><td><input type=text name=spec
+echo "<tr><td>Name</td><td><input type=text name=name
+size=30 maxlength=30 value='".$row[5]."'></td></tr>";
+ echo "<tr><td>email</td><td><input type=text name=email
 size=30 maxlength=30  value='".$row[2]."'></td></tr>";
  echo "</table></td></tr>";
+ 
  echo "<tr><td colspan=2 align=center><input type=hidden name=rno value=".$rno."><input type=submit value=Submit></td></tr>";
  echo "</form>";
  $sno++;
@@ -37,4 +40,4 @@ Not Found</font></td></tr>";
 ?>
 </table>
 </body>
-</html> 
+</html> +

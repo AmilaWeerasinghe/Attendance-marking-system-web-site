@@ -31,6 +31,10 @@
 			<input type="text" name="name" >
 		</div>
 		<div class="input-group">
+			<label>FingerPrint ID</label>
+			<input type="text" name="fingerprintid" >
+		</div>
+		<div class="input-group">
 			<label>Email</label>
 			<input type="email" name="email" value="<?php echo $email; ?>">
 		</div>

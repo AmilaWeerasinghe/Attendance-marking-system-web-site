@@ -1,4 +1,4 @@
-<?php require('connection.php');?>
+<?php require('connection1.php');?>
 <html>
  <head>
   <title>Update Doctor</title>
@@ -19,16 +19,17 @@ Doctor</font></td></tr>
 
 error_reporting(1);
 $rno=trim($_POST["rno"]);
+$username=trim($_POST["username"]);
 $name=trim($_POST["name"]);
-$spec=trim($_POST["spec"]);
-$error=0; if ($name=="") { $error=1; echo "<tr><td><font color=red size=4>Name
+$email=trim($_POST["email"]);
+$error=0; if ($username=="") { $error=1; echo "<tr><td><font color=red size=4>Name
 can't empty</font></td></tr>"; }
-if ($spec=="") { $error=1; echo "<tr><td><font color=red
-size=4>Specilization can't empty</font></td></tr>"; }
+if ($name=="") { $error=1; echo "<tr><td><font color=red
+size=4>name can't empty</font></td></tr>"; }
 if ($error==0) {
 
- mysql_query("update doct set dname='".$name."',dspec='".$spec."'
-where dno='".$rno."'");
+ mysql_query("update users set username='".$username."',name='".$name."',email='".$email."'
+where id='".$rno."'");
  echo "<tr><td align=center><font size=4 color=green>Successfully
 Records Updated</font></td></tr>";
 }

@@ -1,4 +1,4 @@
-<?php require('connection.php');?>
+<?php require('connection1.php');?>
 <html>
  <head>
   <title>All Doctors List</title>
@@ -16,17 +16,16 @@ href=alist.php>Appointments</td>
 List</font></td></tr>
 <tr><td><a href=dadd.php>Add New Record</a></td></tr>
 <tr><td><table width=750 cellspacing=0 cellpadding=5>
-<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Doctor
-Name</td><td align=center>Specialization</td><td
+<tr bgcolor=#ccccc><td align=center>id</td><td align=center>UserName</td><td align=center>Email</td>
+<td align=center>Usertype</td><td align=center>Name</td><td
 align=center>Options</td></tr>
 <?php
 
 
-$rs1=mysql_query("SELECT * from doct where dshow='Y' order by
-dname;");
+$rs1=mysql_query("SELECT * from users where dshow='y' ");
 $sno=1;
 while( $row=mysql_fetch_array($rs1)) {
- echo "<tr><td>$sno</td><td>$row[1]</td><td>$row[2]</td><td><a
+ echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[5]</td><td><a
 href=dmod.php?rno=".$row[0].">Modify</a> | <a
 href=ddel.php?rno=".$row[0].">Delete</a></td></tr>";
  $sno++;

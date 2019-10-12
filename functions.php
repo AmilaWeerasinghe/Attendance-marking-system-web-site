@@ -23,6 +23,7 @@ function register(){
     // defined below to escape form values
 	$username    =  e($_POST['username']);
 	$name    =  e($_POST['name']);
+	$fingerprintid    =  e($_POST['fingerprintid']);
 	$email       =  e($_POST['email']);
 	$password_1  =  e($_POST['password_1']);
 	$password_2  =  e($_POST['password_2']);
@@ -33,6 +34,9 @@ function register(){
 	}
 	if (empty($name)) { 
 		array_push($errors, "name is required"); 
+	}
+	if (empty($fingerprintid)) { 
+		array_push($errors, "fingerprintid is required"); 
 	}
 	if (empty($email)) { 
 		array_push($errors, "Email is required"); 
@@ -50,14 +54,14 @@ function register(){
 
 		if (isset($_POST['user_type'])) {
 			$user_type = e($_POST['user_type']);
-			$query = "INSERT INTO users (username,name, email, user_type, password) 
-					  VALUES('$username','$name', '$email', '$user_type', '$password')";
+			$query = "INSERT INTO users (username,name,fingerprintid, email, user_type, password,dshow) 
+					  VALUES('$username','$name','$fingerprintid', '$email', '$user_type', '$password','Y')";
 			mysqli_query($db, $query);
 			$_SESSION['success']  = "New user successfully created!!";
 			header('location: home.php');
 		}else{
-			$query = "INSERT INTO users (username,name, email, user_type, password) 
-					  VALUES('$username','$name', '$email', 'user', '$password')";
+			$query = "INSERT INTO users (username,name, email, user_type, password,dshow) 
+					  VALUES('$username','$name','$fingerprintid', '$email', 'user', '$password','y')";
 			mysqli_query($db, $query);
 
 			// get id of the created user
