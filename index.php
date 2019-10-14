@@ -47,16 +47,15 @@
 			</div>
 		</div>
 	</div>
-
-	<h2>Welcome to SAMS (Smart Attendance Marking System)</h2>
+<h2>Welcome to SAMS (Smart Attendance Marking System)</h2>
 	<i>Attendance Policy</i> :
 
 	<b>80%</b> course participation is a <b>MUST</b> <br>
-	
-
-
 	<div>
 	<a href="disppurchase.php">Attendance</a>
+	</div>
+	<div>
+	<a href="contact.php">Contact</a>
 	</div>
 	
 	
