@@ -9,7 +9,7 @@
 	<div class="header">
 		<h2>Login</h2>
 	</div>
-	<form method="post" action="login.php">
+	<form method="post" action="login.php" hright="50px">
 
 		<?php echo display_error(); ?>
 
@@ -28,5 +28,6 @@
 			Not yet a member? <a href="register.php">Sign up</a>
 		</p>
 	</form>
+	<img src="images/2.jpg"  >
 </body>
 </html>

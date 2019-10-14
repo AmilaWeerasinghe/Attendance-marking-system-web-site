@@ -1,7 +1,7 @@
-<?php require('connection.php');?>
+<?php require('connection1.php');?>
 <html>
  <head>
-  <title>Delete Doctors</title>
+  <title>Delete Users</title>
  <link rel="stylesheet" href="css/bootstrap.css"/>
  </head> 
  <body>

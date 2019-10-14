@@ -8,9 +8,9 @@
 <table class="table table-bordered">
 <tr bgcolor=blue><td align=center><font SIZE=6 color=white>Smart Attendance Marking System</font></td></tr>
 <tr><td><table align=center width=750 cellspacing=0 cellpadding=5>
-<tr><td align=center><a href=dlist.php>Doctors</td><td align=center><a
+<tr><td align=center><a href=dlist.php>Users</td><td align=center><a
 href=plist.php>Course details</td><td align=center><a
-href=alist.php>Appointments</td>
+href=alist.php>Teachers</td>
 </table></td></tr>
 <tr bgcolor=red><td ><font size=4 color=white>Doctors
 List</font></td></tr>

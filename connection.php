@@ -9,7 +9,7 @@ Error</font></td></tr>";
   die();
  }
  mysql_connect("localhost","root","");
- mysql_select_db("hospital");
+ mysql_select_db("attendance");
  
 if($_SESSION['admin']=="")
 {

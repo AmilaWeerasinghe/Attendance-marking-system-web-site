@@ -16,7 +16,7 @@ href=alist.php>Appointments</td>
 Doctor</font></td></tr>
 
 <?php
-require('connection.php');
+require('connection1.php');
 error_reporting(1);
 $rno=$_GET["rno"];
  mysql_query("update doct set dshow='Y' where dno='$rno'");

@@ -49,7 +49,7 @@ border: 1px solid #fff;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Searching</title>
 </head>
-<body>
+<body background="images/2.jpg">
 <br>
      Enter Your Student ID number
     <form action="A.php" method="post">

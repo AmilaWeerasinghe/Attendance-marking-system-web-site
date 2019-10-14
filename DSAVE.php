@@ -16,7 +16,7 @@ href=alist.php>Appointments</td>
 Doctor</font></td></tr>
 
 <?php
-require('connection.php');
+require('connection1.php');
 error_reporting(1);
 $name=trim($_POST["name"]);
 $spec=trim($_POST["spec"]);

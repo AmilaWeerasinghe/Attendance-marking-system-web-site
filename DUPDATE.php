@@ -1,7 +1,7 @@
 <?php require('connection1.php');?>
 <html>
  <head>
-  <title>Update Doctor</title>
+  <title>Update User</title>
  </head>
 <body bgcolor="#eee">
 <table border="1" align=center width=750 cellspacing=0 cellpadding=5>

@@ -48,20 +48,25 @@
 		</div>
 	</div>
 
+	<h2>Welcome to SAMS (Smart Attendance Marking System)</h2>
+	<i>Attendance Policy</i> :
+
+	<b>80%</b> course participation is a <b>MUST</b> <br>
+	
+
+
 	<div>
 	<a href="disppurchase.php">Attendance</a>
 	</div>
-	<div>
-	<a href="searching.php">Search your Attendance</a>
-	</div>
+	
 	
 </div>
 
 <!-- Sidebar -->
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%" position="top">
   <h3 class="w3-bar-item">Enrolled Courses</h3>
-  <a href="A.php" class="w3-bar-item w3-button">Course A</a>
-  <a href="B.php" class="w3-bar-item w3-button">Course B</a>
+  <a href="A.php" class="w3-bar-item w3-button">Course A</a><br>
+  <a href="B.php" class="w3-bar-item w3-button">Course B</a><br>
   <a href="C.php" class="w3-bar-item w3-button">Course C</a>
 </div>
 </body>
