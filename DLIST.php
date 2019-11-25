@@ -1,7 +1,7 @@
 <?php require('connection1.php');?>
 <html>
  <head>
-  <title>All Doctors List</title>
+  <title>All USERS List</title>
  <link rel="stylesheet" href="css/bootstrap.css"/>
  </head> 
  <body>
@@ -12,7 +12,7 @@
 href=plist.php>Course details</td><td align=center><a
 href=alist.php>Teachers</td>
 </table></td></tr>
-<tr bgcolor=red><td ><font size=4 color=white>Doctors
+<tr bgcolor=red><td ><font size=4 color=white>Users
 List</font></td></tr>
 <tr><td><a href=dadd.php>Add New Record</a></td></tr>
 <tr><td><table width=750 cellspacing=0 cellpadding=5>

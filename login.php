@@ -7,6 +7,7 @@
 </head>
 <body>
 	<div class="header">
+	<h1>Smart Attendance Marking System</h1>
 		<h2>Login</h2>
 	</div>
 	<form method="post" action="login.php" hright="50px">
