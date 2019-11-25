@@ -41,7 +41,7 @@ Not Found</font></td></tr>";
 <tr bgcolor=red><td><font size=4 color=white>Deleted
 Records</font></td></tr>
 <tr><td><table width=750 cellspacing=0 cellpadding=5>
-<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Course Name</td><td align=center>Address</td><td
+<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Course Name</td><td align=center>Allocated days</td><td
 align=center>Options</td></tr>
 <?php
 $rs2=mysql_query("SELECT * from patient where pshow='N' order by

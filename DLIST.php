@@ -42,11 +42,10 @@ Records</font></td></tr>
 Name</td><td align=center>Specialization</td><td
 align=center>Options</td></tr>
 <?php
-$rs2=mysql_query("SELECT * from doct where dshow='N' order by
-dname;");
+$rs2=mysql_query("SELECT * from users where dshow='N' ;");
 $sno=1;
 while( $row=mysql_fetch_array($rs2)) {
- echo "<tr><td>$sno</td><td>$row[1]</td><td>$row[2]</td><td><a
+ echo "<tr><td>$sno</td><td>$row[1]</td><td>$row[3]</td><td><a
 href=dundel.php?rno=".$row[0].">Undelete</a></td></tr>";
  $sno++;
 }
