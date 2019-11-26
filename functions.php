@@ -35,9 +35,7 @@ function register(){
 	if (empty($name)) { 
 		array_push($errors, "name is required"); 
 	}
-	if (empty($fingerprintid)) { 
-		array_push($errors, "fingerprintid is required"); 
-	}
+	
 	if (empty($email)) { 
 		array_push($errors, "Email is required"); 
 	}

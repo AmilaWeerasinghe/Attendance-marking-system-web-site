@@ -6,6 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
 	<div class="header">
 	<h1>Smart Attendance Marking System</h1>
 		<h2>Login</h2>
@@ -26,7 +32,7 @@
 			<button type="submit" class="btn" name="login_btn">Login</button>
 		</div>
 		<p>
-			Not yet a member? <a href="register.php">Sign up</a>
+			Not yet a member? Contact an Admin 
 		</p>
 	</form>
 	<img src="images/2.jpg"  >

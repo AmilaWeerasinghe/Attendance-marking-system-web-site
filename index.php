@@ -47,7 +47,7 @@
 			</div>
 		</div>
 	</div>
-<h2>Welcome to SAMS (Smart Attendance Marking System)</h2>
+<h2>Welcome to <font size="10">SAMS</font> (Smart Attendance Marking System)</h2>
 	<i>Attendance Policy</i> :
 
 	<b>80%</b> course participation is a <b>MUST</b> <br>

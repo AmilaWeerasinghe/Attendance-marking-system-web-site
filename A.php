@@ -9,7 +9,7 @@ $count=0;
 if(isset($_POST['search'])){
     $searchq=$_POST['search'];
     
-    $query=mysqli_query($con,"SELECT * FROM A where STUDENT_ID like '%$searchq%'");
+    $query=mysqli_query($con,"SELECT * FROM A where STUDENT_ID like '$searchq'");
     $count=mysqli_num_rows($query);
 
     if($count==0){
@@ -51,12 +51,12 @@ border: 1px solid #fff;
 </head>
 <body background="images/2.jpg">
 <br>
-     Enter Your Student ID number
+<font size="6">Enter Your Student ID number</font>
     <form action="A.php" method="post">
     <input type="text" name="search"/>
     <input type="submit" value=">>"/>
     </form>
-    Number of your attended days =
+    <font size="6">Number of your attended days =<font size="6">
     <?php
 
     print("$output  "); 
@@ -64,7 +64,7 @@ border: 1px solid #fff;
     //print("   $count");
     ?>
 
-<br> Attendance Percentage upto now
+<br> Attendance Percentage upto now = 
 <?php
 $total_num=0;
 $con=mysqli_connect("localhost","root","","hospital");
@@ -98,9 +98,9 @@ $per = ($obtained_num/$total_num)*100;
 echo $per;
 mysqli_close($con);
 ?>
-
+%
 <form>
-<input class="MyButton" type="button" value="Go Back to Home Page" onclick="window.location.href='index.php'" />
+<input class="MyButton" type="button" value="Go Back " onclick="window.location.href='index.php'" />
 </form>
 
 </body>
