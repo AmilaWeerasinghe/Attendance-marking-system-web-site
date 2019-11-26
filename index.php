@@ -11,8 +11,14 @@
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
 </head>
-<body>
+<body background="images/efac-building.jpg">
+<div class="topnav">
+  <a href="news.php">News</a>
+  <a href="contact.php">Contact Us</a>
+  <a href="about.php">About Us</a>
+</div>
 <div style="margin-left:25%">
 	<div class="header">
 		<h2>Home Page</h2>
@@ -51,14 +57,6 @@
 	<i>Attendance Policy</i> :
 
 	<b>80%</b> course participation is a <b>MUST</b> <br>
-	<div>
-	<a href="disppurchase.php">Attendance</a>
-	</div>
-	<div>
-	<a href="contact.php">Contact</a>
-	</div>
-	
-	
 </div>
 
 <!-- Sidebar -->

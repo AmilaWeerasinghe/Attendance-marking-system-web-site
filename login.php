@@ -7,10 +7,9 @@
 </head>
 <body>
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="news.php">News</a>
+  <a href="contact.php">Contact Us</a>
+  <a href="about.php">About Us</a>
 </div>
 	<div class="header">
 	<h1>Smart Attendance Marking System</h1>
